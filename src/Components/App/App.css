@@ -1,0 +1,27 @@
+.App {
+	text-align: center;
+}
+
+body,
+html #root {
+	height: 100%;
+	margin: 0 auto;
+}
+
+html {
+	font-size: 18px;
+}
+
+h1 {
+	padding: 0.77rem 0;
+	background-color: #222831;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 1.88rem;
+	color: #fff;
+	margin: 0;
+}
+
+.highlight {
+	color: #38e54d;
+}
