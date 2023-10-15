@@ -9,7 +9,7 @@ export class Playlist extends React.Component {
 				<input defaultValue={"New Playlist"} />
 				{/* tracklist component */}
 				<TrackList />
-				<button class="Playlist-save">SAVE TO SPOTIFY</button>
+				<button className="Playlist-save">SAVE TO SPOTIFY</button>
 			</div>
 		);
 	}
