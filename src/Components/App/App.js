@@ -8,7 +8,7 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			SearchResults: [
+			searchResults: [
 				{
 					name: "Example Track Name",
 					artist: "Example artist",
@@ -36,7 +36,7 @@ class App extends React.Component {
 					<SearchBar />
 					<div className="App-playlist">
 						{/* SearchBarResults component */}
-						<SearchResults SearchResults={this.state.SearchResults} />
+						<SearchResults SearchResults={this.state.searchResults} />
 						{/* Playlist component */}
 						<Playlist />
 					</div>
