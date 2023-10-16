@@ -1,8 +1,8 @@
 import React from "react";
-import "./App.css";
 import { SearchBar } from "../SearchBar/SearchBar";
 import { SearchResults } from "../SearchResults/SearchResults";
 import { Playlist } from "../Playlist/Playlist";
+import "./App.css";
 
 class App extends React.Component {
 	constructor(props) {
@@ -38,6 +38,19 @@ class App extends React.Component {
 				},
 			],
 		};
+	}
+
+	addTrack(track) {
+		// Use of Array.find method to search for a track and compare its id
+		const foundTrack = this.state.playlistTracks.find(
+			(playlistTrack) => playlistTrack.id === track.id
+		);
+		// if there isn't a track with the same id, add the track to the playlist
+		const newTrack = this.state.playlistTracks.concat(track);
+		// test logic and make decition
+		foundTrack
+			? console.log("This track already exists")
+			: this.setState({ playlistTracks: newTrack });
 	}
 
 	render() {
