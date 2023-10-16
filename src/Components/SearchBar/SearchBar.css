@@ -8,12 +8,12 @@
 
 .SearchBar input {
 	widht: 280px;
-	padding: 0.88rem 0;
-	border: 1px solid #393e46;
+	padding: 0.88rem 0.88rem;
+	border: 2px solid #393e46;
 	border-radius: 3px;
 	background-color: #222831;
 	margin-bottom: 2.22rem;
-	color: #393e46;
+	color: #fff;
 	text-align: center;
 	font-size: 1rem;
 }
@@ -38,4 +38,6 @@
 
 .SearchButton:hover {
 	background-color: #38e54d;
+	color: #000;
+	font-weight: 600;
 }
