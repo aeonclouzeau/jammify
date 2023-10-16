@@ -34,13 +34,12 @@
 	font-size: 0.83rem;
 	transition: background-color 0.25s;
 	color: #fff;
-	font-weight: 500;
+	font-family: "Poppins";
 }
 
 .Playlist-save:hover {
 	background-color: #38e54d;
 	color: #000;
-	font-weight: 600;
 }
 
 @media only screen and (max-width: 1020px) {
