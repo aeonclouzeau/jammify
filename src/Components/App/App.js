@@ -59,7 +59,10 @@ class App extends React.Component {
 
 						})} */}
 						{/* Playlist component */}
-						<Playlist />
+						<Playlist
+							playlistName={this.state.playlistName}
+							playlistTracks={this.state.playlistTracks}
+						/>
 					</div>
 				</div>
 			</div>
