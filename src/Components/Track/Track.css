@@ -1,6 +1,13 @@
 .Track {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+	margin-top: 1rem;
+	border-bottom: 1px solid #cccc;
+}
+
+.Track-information {
+	padding-left: 1rem;
 }
 
 .Track-action {
@@ -9,4 +16,8 @@
 	border: none;
 	cursor: pointer;
 	font-size: 1.5rem;
+}
+
+.Track-action:hover {
+	color: #cccc;
 }
