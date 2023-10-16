@@ -2,6 +2,11 @@
 	text-align: center;
 }
 
+.App-playlist {
+	display: flex;
+	justify-content: space-between;
+}
+
 body,
 html #root {
 	height: 100%;
