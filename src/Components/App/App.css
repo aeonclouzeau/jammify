@@ -6,11 +6,18 @@ body,
 html #root {
 	height: 100%;
 	margin: 0 auto;
-	background-image: url(../App/background_jamming.jpg);
 }
 
 html {
 	font-size: 18px;
+}
+
+body {
+	background-color: #000;
+	background-image: url(../App/background_jamming.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 h1 {
