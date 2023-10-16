@@ -32,11 +32,17 @@ class App extends React.Component {
 					Jamm<span className="highlight">ify</span>
 				</h1>
 				<div className="App">
-					{/* searchbar component */}
+					{/* searchBar component */}
 					<SearchBar />
+
 					<div className="App-playlist">
-						{/* SearchBarResults component */}
+						{/* SearchResults component */}
 						<SearchResults searchResults={this.state.searchResults} />
+						{/* {this.state.searchResults.map((result) => {
+							console.log("result");
+							console.log(typeof result);
+
+						})} */}
 						{/* Playlist component */}
 						<Playlist />
 					</div>

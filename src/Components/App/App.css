@@ -6,6 +6,7 @@ body,
 html #root {
 	height: 100%;
 	margin: 0 auto;
+	background-image: url(../App/background_jamming.jpg);
 }
 
 html {
@@ -24,4 +25,8 @@ h1 {
 
 .highlight {
 	color: #38e54d;
+}
+
+h2 {
+	color: #fff;
 }

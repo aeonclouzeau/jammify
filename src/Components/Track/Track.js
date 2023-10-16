@@ -13,9 +13,11 @@ export class Track extends React.Component {
 		return (
 			<div className="Track">
 				<div className="Track-information">
+					{/* Track name */}
 					<h3>{this.props.track.name}</h3>
+					{/* track info */}
 					<p>
-						{this.props.artist} | {this.props.album}
+						{this.props.track.artist} | {this.props.track.album}
 					</p>
 				</div>
 				{/* call the render action */}
