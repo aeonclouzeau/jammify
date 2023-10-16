@@ -38,6 +38,8 @@ class App extends React.Component {
 				},
 			],
 		};
+		// Binds the new track instance to the state object
+		this.addTrack = this.addTrack.bind(this);
 	}
 
 	addTrack(track) {
@@ -65,7 +67,10 @@ class App extends React.Component {
 
 					<div className="App-playlist">
 						{/* SearchResults component */}
-						<SearchResults searchResults={this.state.searchResults} />
+						<SearchResults
+							searchResults={this.state.searchResults}
+							onAdd={this.addTrack}
+						/>
 						{/* {this.state.searchResults.map((result) => {
 							console.log("result");
 							console.log(typeof result);
