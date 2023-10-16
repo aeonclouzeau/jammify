@@ -3,8 +3,10 @@
 	height: 950px;
 	overflow-y: scroll;
 	padding: 0.88rem;
-	background-color: #222831;
-	backdrop-filter: blur(20px);
+	background-color: rgb(34, 40, 49, 0.4);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
 }
 
 ::-webkit-scrollbar {

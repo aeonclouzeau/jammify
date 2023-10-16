@@ -6,8 +6,9 @@
 	width: 37%;
 	max-height: 950px;
 	padding: 2.27rem 1.16rem;
-	background-color: #222831;
-	backdrop-filter: blur(10%);
+	background-color: rgb(34, 40, 49, 0.4);
+	backdrop-filter: blur(5px);
+	border-radius: 50px;
 }
 
 .Playlist input {

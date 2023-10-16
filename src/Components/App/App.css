@@ -4,7 +4,7 @@
 
 .App-playlist {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 body,
@@ -23,6 +23,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 }
 
 h1 {
