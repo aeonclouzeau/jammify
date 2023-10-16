@@ -5,7 +5,6 @@
 	padding: 0.88rem;
 	background-color: #222831;
 	backdrop-filter: blur(20px);
-	box-shadow: 0 1px 2px #000000;
 }
 
 ::-webkit-scrollbar {
