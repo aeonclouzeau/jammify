@@ -71,11 +71,6 @@ class App extends React.Component {
 							searchResults={this.state.searchResults}
 							onAdd={this.addTrack}
 						/>
-						{/* {this.state.searchResults.map((result) => {
-							console.log("result");
-							console.log(typeof result);
-
-						})} */}
 						{/* Playlist component */}
 						<Playlist
 							playlistName={this.state.playlistName}
