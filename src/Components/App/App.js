@@ -22,6 +22,21 @@ class App extends React.Component {
 					id: 2,
 				},
 			],
+			playlistName: "Example Playlist",
+			playlistTracks: [
+				{
+					name: "Example Playlist Track Name",
+					artist: "Example Playlist Track artist",
+					album: "Example Playlist Track album",
+					id: 3,
+				},
+				{
+					name: "Example Playlist Track Name 4",
+					artist: "Example Playlist Track artist 4",
+					album: "Example Playlist Track album 4",
+					id: 4,
+				},
+			],
 		};
 	}
 
