@@ -40,10 +40,11 @@ class App extends React.Component {
 		};
 		// Binds the new track instance to the state object
 		this.addTrack = this.addTrack.bind(this);
+		this.removeTrack = this.removeTrack.bind(this);
 	}
 
 	addTrack(track) {
-		// Use of Array.find method to search for a track and compare its id
+		// Use of Array.find method to search and compare ids
 		const foundTrack = this.state.playlistTracks.find(
 			(playlistTrack) => playlistTrack.id === track.id
 		);
@@ -56,9 +57,10 @@ class App extends React.Component {
 	}
 
 	removeTrack(track) {
-		this.state.playlistTracks.filter(
+		const isPresent = this.state.playlistTracks.filter(
 			(playlistTrack) => playlistTrack.id !== track.id
 		);
+		this.setState({ playlistTracks: isPresent });
 	}
 
 	render() {
