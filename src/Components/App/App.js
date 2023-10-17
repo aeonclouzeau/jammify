@@ -55,6 +55,12 @@ class App extends React.Component {
 			: this.setState({ playlistTracks: newTrack });
 	}
 
+	removeTrack(track) {
+		this.state.playlistTracks.filter(
+			(playlistTrack) => playlistTrack.id !== track.id
+		);
+	}
+
 	render() {
 		return (
 			<div>
