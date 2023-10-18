@@ -68,6 +68,10 @@ class App extends React.Component {
 		this.setState({ playlistName: name });
 	}
 
+	savePlaylist() {
+		const trackURIs = this.state.playlistTracks.map((tracks) => tracks.uri);
+	}
+
 	render() {
 		return (
 			<div>
