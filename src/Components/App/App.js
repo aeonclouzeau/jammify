@@ -41,6 +41,7 @@ class App extends React.Component {
 		// Binds the new track instance to the state object
 		this.addTrack = this.addTrack.bind(this);
 		this.removeTrack = this.removeTrack.bind(this);
+		this.updatePlaylistName = this.updatePlaylistName.bind(this);
 	}
 
 	addTrack(track) {
@@ -61,6 +62,10 @@ class App extends React.Component {
 			(playlistTrack) => playlistTrack.id !== track.id
 		);
 		this.setState({ playlistTracks: isPresent });
+	}
+
+	updatePlaylistName(name) {
+		this.setState({ playlistName: name });
 	}
 
 	render() {
