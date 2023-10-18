@@ -24,6 +24,7 @@ body {
 	background-size: cover;
 	background-position: center;
 	overflow: auto;
+	margin-bottom: 200px;
 }
 
 h1 {
