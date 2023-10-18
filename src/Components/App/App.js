@@ -83,6 +83,8 @@ class App extends React.Component {
 						<Playlist
 							playlistName={this.state.playlistName}
 							playlistTracks={this.state.playlistTracks}
+							onRemoval={this.removeTrack}
+							isRemoval={true}
 						/>
 					</div>
 				</div>
