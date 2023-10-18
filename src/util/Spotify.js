@@ -1,4 +1,10 @@
 const accessToken = "";
-const Spotify = {};
+const Spotify = {
+	getAccessToken() {
+		if (accessToken) {
+			return accessToken;
+		}
+	},
+};
 
 export { Spotify };
