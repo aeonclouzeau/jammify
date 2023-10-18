@@ -86,7 +86,7 @@ class App extends React.Component {
 				</h1>
 				<div className="App">
 					{/* searchBar component */}
-					<SearchBar />
+					<SearchBar onSearch={this.search} />
 
 					<div className="App-playlist">
 						{/* SearchResults component */}
