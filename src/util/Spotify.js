@@ -17,6 +17,7 @@ const Spotify = {
 			window.setTimeout(() => (accessToken = ""), expiresIn * 1000); // clears the value of access token after 1000 miliseconds
 			window.history.pushState("Access Token", null, "/"); // Removes access token from url
 		} else {
+			// will redirect the user to a login screen to get a new token
 			const redirect = `https://accounts.spotify.com/authorize?client_id=${clientID}&response_type=token&scope=playlist-modify-public&redirect_uri=${redirectURI}`;
 			window.location = redirect;
 		}
