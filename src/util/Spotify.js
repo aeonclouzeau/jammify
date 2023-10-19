@@ -12,7 +12,10 @@ const Spotify = {
 
 		if (urlAccessToken && urlExpiresIn) {
 			accessToken = urlAccessToken[1];
-			const expires_in = Number(urlExpiresIn[1]);
+			const expiresIn = Number(urlExpiresIn[1]);
+			// access token expiration
+			window.setTimeout(() => (accessToken = ""), expiresIn * 1000); // clears the value of access token after 1000 miliseconds
+			window.history.pushState("Access Token", null, "/");
 		}
 	},
 };
